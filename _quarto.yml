@@ -20,20 +20,20 @@ website:
     left:
       - href: index.qmd
         text: Home
-      # - text: "About"
-      #   menu:
-      #     - href: about.qmd
-      #       text: GISRUK
-      #     - href: theme.qmd
-      #       text: Conference Theme
-      - text: "Participation"
+      - text: "Submitting"
         menu:
           - href: cfp/
             text: Call for papers
           - href: osgeo/
             text: GISRUK & OSGeo:UK GoFundGeo Award
-          - href: registration/
+      - text: "Attending"
+        menu:
+          - href: https://shop.bris.ac.uk/conferences-and-events/faculty-of-science/geographical-sciences/conferences/the-33rd-annual-gisruk-conference
             text: Registration
+          - href: venue/
+            text: Venues
+          - href: https://meetbristolbathres.bzon.uk/event/33rd-annual-gis-research-uk-conference/ 
+            text: Accommodation 
       - text: "Programme"
         menu:
           - href: program/
@@ -43,9 +43,7 @@ website:
           - href: ecrs/
             text: ECR Sessions
       - href: organisation/
-        text: Organisation
-      - href: venue/
-        text: Venue
+        text: Organisers
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/company/gisruk/
