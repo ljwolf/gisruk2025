@@ -26,6 +26,10 @@ website:
             text: Call for papers
           - href: osgeo/
             text: GISRUK & OSGeo:UK GoFundGeo Award
+          - href: https://app.oxfordabstracts.com/stages/76668/review
+            text: Reviews
+          - href: https://app.oxfordabstracts.com/events/74052/committee/decisions/submissions
+            text: Acceptances
       - text: "Attending"
         menu:
           - href: https://shop.bris.ac.uk/conferences-and-events/faculty-of-science/geographical-sciences/conferences/the-33rd-annual-gisruk-conference
