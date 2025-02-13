@@ -1,19 +1,22 @@
 ---
 title: Keynote Speakers
+format:
+  html:
+    page-layout: custom
 ---
 
-Coming soon! 
-<!--
+We are proud to welcome the following keynote speakers to address GISRUK 2025: 
 <br>
+<hr>
 
-::: {.grid}
+:::{.grid}
 
-::: {.g-col-3}
-![](ntg.jpg)
+:::{.g-col-3}
+![](urskademsar.jpg)
 :::
 
 ::: {.g-col-9}
-**Natalia Tejedor Garavito** is a Principal Enterprise Fellow at the University of Southampton and leads the Geospatial Data and Analysis Team in the [WorldPop](https://www.worldpop.org/#) programme.  Her expertise is in advanced applications of GIS, with focus on spatial demography to support decision-making processes, particularly in low- and middle-income countries, producing high resolution, open and contemporary data, mainly on projects related to reproductive, maternal, newborn, child, and adolescence health. She also leads the development of sophisticated analytical tools and provides capacity-building aimed at empowering local stakeholders to utilize spatial data effectively in their decision-making processes, facilitating knowledge transfer and fostering enduring partnerships with international stakeholders. Her experience includes collaborations with governments, academic and non-academic institutions, and NGOs around the world. 
+**Dr. Urška Demšar** is a Senior Lecturer (Associate Professor), Director of Postgraduate studies in the School of Geography & Sustainable Development at the University of St Andrews in Scotland, UK, and is an established international leader in Geoinformatics. She is Associate Editor of the International Journal of GIScience and leads the Bell-Edwards Geographic Data Institute (BEGIN) in St Andrews. She specialises in movement analytics, developing new animal movement and human mobility methods. Her current research vision is to apply spatial data science to difficult problems in animal movement and human mobility and to bring the two disciplines together in terms of concepts, data and methods.
 :::
 
 :::
@@ -22,11 +25,11 @@ Coming soon!
 ::: {.grid}
 
 ::: {.g-col-3}
-![](morris.png)
+![](micheleacuto.jpeg)
 :::
 
 ::: {.g-col-9}
-**Michelle Morris** is Professor of Data Science for Food in the School of Food Science and Nutrition at the University of Leeds and a Fellow of the Alan Turing Institute in London. She leads the interdisciplinary Nutrition and Lifestyle Analytics team which uses novel forms of data, including supermarket transaction records from a number of UK supermarkets, for research into lifestyle behaviours and health. She is Academic Chair of the Leeds Institute for Data Analytics Data Scientist Development Programme and is passionate about empowering others to use data for public good.  Michelle is an investigator at the ESRC funded Consumer Data Research Centre, the UKRI Transforming UK Food Systems funded FIO-Food and DIO-Food projects and PI for the IGD funded Healthy and Sustainable Diets programme.
+**Prof. Michele Acuto** is Professor of Urban Resilience in the School of Geographical Sciences and a Pro-Vice Chancellor (Global Engagement) of the University of Bristol. Michele is also a managing editor of Urban Studies and a Trustee of Fondation Botnar. He is an expert on urban politics and international urban planning and a keen researcher and practitioner of urban governance. Michele has worked with numerous city networks, UN agencies, and mayors around the world supporting city diplomacy across climate, health, resilience and migration
 
 :::
 
@@ -38,13 +41,11 @@ Coming soon!
 ::: {.grid}
 
 ::: {.g-col-3}
-![](ljw.jpg)
+![](stefdesabbata.jpg)
 :::
 
 ::: {.g-col-9}
-[**Levi John Wolf**](https://www.ljwolf.org/) is Associate Professor in Spatial Analysis at the University of Bristol’s Quantitative Spatial Science Lab. He works in spatial data science, building new methods and software to learn new things about social and environmental processes. The techniques developed are used across urban planning, political science, economics, public health, astronomy, and genomics to understand things like commuting, infill development, deprivation, voting, redistricing, industrial clusters, disease transmission, and anomaly detection in images. Levi is a core maintainer of [geopandas](https://geopandas.org/en/stable/), author of [CenPy](https://github.com/ljwolf/cenpy) and co-maintainer of [PySAL](https://github.com/pysal/pysal). He has recently written [Geographic Data Science with Python](https://geographicdata.science/book/intro.html), with Dani Arribas-Bel and Sergio Rey. He has industry experience at [Nextdoor](https://nextdoor.com/), [CARTO](https://carto.com/) and [Mondial Relay](https://www.mondialrelay.fr/).
- 
+**Dr. Stef De Sabbata** is an Associate Professor of Geographical Information Science at the School of Geography, Geology and the Environment, Senior Fellow of the Institute for Digital Culture and the Turing Academic Liaison of the University of Leicester. She is the Chair of the Geographical Information Science Research Group of the Royal Geographical Society (with the Institute of British Geographers). <!--Stef holds a PhD from the Department of Geography of the University of Zurich, where her research focused on geographical knowledge discovery for location-based services. She was a Researcher at the Oxford Internet Institute and a Junior Research Fellow at the Wolfson College of the University of Oxford, where she applied geographical data science approaches to the fields of internet studies and digital geographies.--> Her current research focuses on geographical artificial intelligence, including the development of spatially-explicit approaches to urban analytics – e.g., applying deep neural networks to geodemographic classification and the analysis of urban form and function – and the study and use of foundation models in digital geographies and cultural analytics. <!--In 2023, she was the lead guest editor for a special issue of the International Journal of Geographical Information Science on “GeoAI in Urban Analytics”.-->
 :::
 
 :::
--->
