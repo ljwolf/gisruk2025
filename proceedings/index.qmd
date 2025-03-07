@@ -22,4 +22,6 @@ There are a number of important steps to consider before your paper can be uploa
 
 Once your abstract satisfies all of the above conditions, please email it to the conference organisers using the email address that you recieved when your abstract was accepted. The subject of the email should have `GISRUK-Proceedings-` and your abstract number (like, `GISRUK-Proceedings-121`). 
 
+Your abstract must be submitted to the conference organisers by 23:59 GMT on **9th of April, 2025.**
+
 We respectfully reserve the right to exclude your paper from the GISRUK Proceedings unless it meets these guidance notes to the satisfaction of the GISRUK Proceedings coordinator(s). It is __very important__ to ensure that the *final PDF provided to us is ready to publish __as is__*. Each item in the GISRUK Proceedings requires us to manually generate a Digital Object Identifier (DOI). Any changes after a DOI is created must be carried out by the Zenodo team based on our request.  
