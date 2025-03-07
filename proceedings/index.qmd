@@ -1,0 +1,25 @@
+---
+title: "The GISRUK Conference Proceedings"
+subtitle: "preparing your submission"
+---
+
+GISRUK uses [Zenodo](https://zenodo.org) to host the annual GISRUK conference proceedings. Zenodo provides an open access repository to host the proceedings and offers long term availability of these resources. Every GISRUK paper/abstract uploaded to Zenodo is given a unique DOI which allows for wider dissemination and citation of these works. 
+
+This year's Proceedings will live at [`zenodo.org/gisruk2025`](https://zenodo.org/communities/gisruk2025).
+
+There are a number of important steps to consider before your paper can be uploaded to Zenodo for the GISRUK 2025 proceedings. A simple checklist to prepare your document for the proceedings is provided below. 
+
+- [ ] The final abstract document is a PDF document prepared using the GISRUK Template ([Word](https://gisruk.github.io/files/GISRUK2025_PaperTemplateSubmission.docx), [LaTeX](https://gisruk.github.io/files/GISRUK2025_PaperTemplateSubmission.zip), [Quarto](https://github.com/sdesabbata/quarto-gisruk)). 
+- [ ] No additional changes, modifications, edits, or typesetting adjustments are needed to the final abstract PDF. 
+- [ ] You have integrated the feedback provided by the reviewers as far as you are able. In particular, you are asked to take action where the reviewers have indicated issues around the formatting or presentation of the paper. 
+- [ ] The figures, text, and tables in the final abstract PDF are typeset as you intend them to be read. Generally, tables/figures are placed in-line, rather than at the end.
+- [ ] The text is free of typographical errors, and has been thoroughly proofread. 
+- [ ] Each citation in the text has a corresponding reference in the bibliography.
+- [ ] Each reference in the bibliography has at least one citation within the text. 
+- [ ] The affiliations and contact details for *all of the authors* are correct at the time of submission. This includes the institutional names, addresses, etc.
+- [ ] Each author on the submission has a corresponding biography at the end of the paper. 
+- [ ] The submitting author, or a designated attending author, has registered for the conference. If the lead author is not registered, then the "presenting author" is indicated in the author information. 
+
+Once your abstract satisfies all of the above conditions, please email it to the conference organisers using the email address that you recieved when your abstract was accepted. The subject of the email should have `GISRUK-Proceedings-` and your abstract number (like, `GISRUK-Proceedings-121`). 
+
+We respectfully reserve the right to exclude your paper from the GISRUK Proceedings unless it meets these guidance notes to the satisfaction of the GISRUK Proceedings coordinator(s). It is __very important__ to ensure that the *final PDF provided to us is ready to publish __as is__*. Each item in the GISRUK Proceedings requires us to manually generate a Digital Object Identifier (DOI). Any changes after a DOI is created must be carried out by the Zenodo team based on our request.  
