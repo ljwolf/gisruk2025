@@ -1,8 +1,111 @@
 ---
 title: "Conference Programme"
+execute:
+  echo: false
+  error: false
+  warning: false
+  message: false
 ---
+Event information posted here is subject to change depending on the requirements of the conference. If changes do occur, we will email all attendees, and disruption to talk times will be minimized. 
+```{r}
+library(tidyverse)
+library(knitr)
+library(gt)
 
-Coming soon!
-<!-- TODO: setup as a simple html table. don't overengineer
+submissions = read_csv("./sessions.csv") |> select(
+    firstname, lastname, title, session, session_no, room, day, chair, status
+) |> mutate(
+    date = case_when(
+        day==1 ~ "Wednesday, April 23",
+        day==2 ~ "Thursday, April 24",
+        day==3 ~ "Friday, April 25"
+    ),
+    time = case_when(
+        session_no == 1 ~ "14:30 - 15:30",
+        session_no == 2 ~ "15:45 - 16:45",
+        session_no == 3 ~ "09:30 - 10:30",
+        session_no == 4 ~ "11:00 - 12:00",
+        session_no == 5 ~ "14:30 - 15:30",
+        session_no == 6 ~ "15:45 - 16:45",
+        session_no == 7 ~ "09:00 - 10:00"
+    )
+)
 
--->
+sessions <- submissions |> filter(!is.na(chair)) |> select(session, session_no, room, date, time, chair) |> rename(start_time='time') |> arrange(desc(date), start_time)
+
+
+talks <- submissions |> filter(status == "Accepted: Talk") |> 
+    mutate(
+        session_start_time = 
+            lubridate::hm(str_split_i(time, pattern=' - ', 1)) + 
+            lubridate::date("2025-04-22") + 
+            lubridate::days(day),
+
+    ) |> group_by(session) |> mutate(
+        talk_start_time = force_tz(session_start_time + lubridate::minutes(20)*(row_number()-1), 'Europe/London')
+    ) |> mutate(
+        time = strftime(talk_start_time, "%H:%M")
+    ) |> select(- chair) |> left_join(sessions |> select(session, chair), by='session') |> select(
+        firstname, lastname, title, session, session_no, date, room, time)
+
+gt_bolden = function(g){
+            lapply(g, function(x){gt::md(paste0("**", x, "**"))})
+        }
+
+posters <- submissions |> filter(is.na(session)) |> select(-session, -session_no, -room, -day, -chair, -date)
+```
+
+# Program at a glance
+Unless otherwise stated, all rooms are in the [Priory Road Complex](../venue). 
+
+
+
+```{r}
+
+glance_main = read_csv("./at_a_glance.csv")
+glance_ecr = read_csv("./ecr.csv") |> mutate(Date = "Tuesday (still to confirm)") |> select(-notes)
+colnames(glance_ecr) = colnames(glance_main)
+rbind(glance_ecr, glance_main) |> 
+    select(-`...1`) |> group_by(Date) |> gt() |> 
+    gt::text_transform(
+        locations=cells_row_groups(),
+        fn=gt_bolden
+    ) |> cols_label(
+        Event = md("**Event**"),
+        Time = md("**Time**"),
+        Location = md("**Room**")
+    )
+```
+
+# All Sessions
+
+```{r}
+sessions |> mutate(session_no = str_c("Group", session_no, sep=' ')) |> group_by(session_no, date, start_time) |> gt() |> gt::text_transform(
+        locations=cells_row_groups(),
+        fn=gt_bolden
+    ) |> cols_label(
+        session = md("**Session**"),
+        room = md("**Room**"),
+        chair = md("**Chair**")
+    )
+```
+
+# All Talks
+
+```{r}
+talks |> arrange(desc(date), time, room) |> arrange(session_no) |> group_by(session_no, session) |> gt() |> gt::text_transform(
+        locations=cells_row_groups(),
+        fn=function(g){
+            lapply(g, function(x){
+                gt::md(paste0("**Session Group ", str_split_i(x, '-', 1), "**", '-', str_split_i(x, '-', 2)))
+                })
+        }
+    ) |> cols_label(
+        firstname = md(""),
+        lastname = md(""),
+        title=  md(""),
+        date=md("**Date**"),
+        room=md("**Room**"),
+        time=md("**Time**")
+    )
+```
